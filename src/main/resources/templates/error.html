@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" ng-app="indexPage">
+<head>
+<title>
+English To ASL Grammar - Error Page
+</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="English-To-ASL-Grammar" content="initial-scale=1" />
+    <meta name="description" content="English To ASL Grammar Application for NLP class"/>
+  	<meta name="keywords" content="English, ASL, Grammar, Conversion"/>
+
+<link rel="stylesheet" th:href="@{/node_modules/angular-material/angular-material.min.css}" />
+
+<script type="text/javascript" th:src="@{/node_modules/angular/angular.min.js}"></script>
+<script type="text/javascript" th:src="@{/node_modules/angular-animate/angular-animate.min.js}"></script>
+<script type="text/javascript" th:src="@{/node_modules/angular-aria/angular-aria.min.js}"></script>
+<script type="text/javascript" th:src="@{/node_modules/angular-material/angular-messages.min.js}"></script>
+<script type="text/javascript" th:src="@{/node_modules/angular-material/angular-material.min.js}"></script>
+
+<script>
+var index = angular.module('indexPage', [ 'ngMaterial' ]);
+index.controller('IndexController', ['$scope', 
+                                     function($scope){
+	
+		
+}]);
+</script>
+</head>
+<body layout="column" ng-controller="IndexController as indexCtrl">
+
+	<md-toolbar style="background: #073473;">
+	<div class="md-toolbar-tools" >
+		<h1 style="color: white; font-size: 26px; font-weight: 600; margin: 4px 20px;
+		 text-transform: uppercase; letter-spacing: 2.4px;" class="cz-color-16777215" flex>
+		  English To ASL Grammar Conversion</h1>
+	</div>
+	</md-toolbar>
+	
+	<md-content flex="" layout="column"> 
+	<md-content flex="" layout="row">
+	<div flex="30"></div>
+				<div flex="" style="margin-top: 60px;">
+					<md-card> 
+					<md-card-content>
+						<br /><br />
+						<div layout-wrap>
+						<h2 style="color: #A6A6A6;" align="center">An unanticipated error has occurred on our end.
+						 This is all we know. Our apologies for the inconvenience.</h2>
+						</div>
+						<br /><br />
+					</md-card-content> 
+					</md-card>
+				</div>
+	<div flex="30"></div>
+	</md-content> 
+	</md-content>
+	<footer style="color: #a6a6a6; margin-bottom: 20px;" align="center"> Copyright © 2016 Harsh Bhavsar. All Rights Reserved</footer>
+
+</body>
+</html> 

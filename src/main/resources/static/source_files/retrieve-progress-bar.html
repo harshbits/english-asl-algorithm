@@ -1,0 +1,38 @@
+<md-dialog>
+
+	<md-toolbar style="background: #073473;">
+	<div class="md-toolbar-tools">
+		<h2>Retrieve Status</h2>
+		<span flex></span>
+		<!-- <md-button class="md-icon-button" ng-click="cancel()" ng-hide="value"> -->
+		<md-button class="md-icon-button" ng-click="cancel()" ng-hide="false"> 
+		<md-icon md-svg-src="images/close_white.svg" aria-label="Close dialog"></md-icon>
+		</md-button>
+	</div>
+	</md-toolbar>
+  <md-dialog-content>
+  <div ng-hide="!value" layout="column">
+  <br>
+  <div align="center">
+  <img style="margin: auto; width: 64px; height: 64px;" alt="Loading GIF Image" 
+			src="images/loading.gif">	
+  </div>
+  <br>
+  <div align="center">
+  <span><h3>Retrieving Details...</h3></span>
+  </div>
+  </div>
+  
+  <div ng-hide="value" layout="column" >
+   	<div align="center" style="margin-right: 20px; margin-left: 20px;">
+  		<span><h3>{{retrieveMessage}}</h3></span>
+  		
+  	</div>
+	 <div align="center"> 
+	  <md-button class="md-primary" ng-click="cancel()">
+	  OK!
+	  </md-button>
+	</div>
+  </div>
+  </md-dialog-content>
+</md-dialog>

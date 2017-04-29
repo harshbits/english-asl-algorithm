@@ -1,0 +1,131 @@
+security:
+  user:
+    password: null
+  basic:
+    enabled: false
+    
+server:
+  port: 12123
+  
+
+spring:
+  
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
+    com.englishasl: DEBUG 
+
+grammarWordsList:
+  
+  nounTags:
+  - NN
+  - NNS
+  - NNP
+  - NNPS
+  
+  pluralNounTags:
+  - NN
+  - NNS
+  - NNPS
+  
+  adjectiveTags:
+  - JJ
+  - JJR
+  - JJS
+  
+  verbTags:
+  - VB
+  - VBD
+  - VBG
+  - VBN
+  - VBP
+  - VBZ 
+  
+  adverbTags:
+  - RB
+  - RBR
+  - RBS
+  
+  beWords: 
+  - IS
+  - ARE
+  - AM
+  - WAS
+  - WERE
+  - BEEN
+  - BEING
+  - BE
+  - WILL
+  - WOULD
+  - SHOULD
+  - COULD
+  - CAN
+  - HAVE
+  - HAD
+  - HAS
+  - SHALL
+  - MUST
+  - MAY
+  - MIGHT
+  
+  validPos:
+  - CC
+  - CD
+  - DT
+  - EX
+  - FW
+  - IN
+  - JJ
+  - JJR
+  - JJS
+  - LS
+  - MD
+  - NN
+  - NNS
+  - NNP
+  - NNPS
+  - PDT
+#  - POS
+  - PRP
+  - PRP$
+  - RB
+  - RBR
+  - RBS
+  - RP
+  - SYM
+  - TO
+  - UH
+  - VB
+  - VBD
+  - VBG
+  - VBN
+  - VBP
+  - VBZ
+  - WDT
+  - WP
+  - WP$
+  - WRB
+  
+  timeWords:
+  - YESTERDAY
+  - MORNING
+  - AFTERNOON
+  - EVENING
+  - NIGHT
+  - YESTERDAY
+  - TOMORROW
+  
+  negationWords:
+  - NOT
+  - NONE
+  - NEVER
+  - NOBODY
+  - NOTHING
+  - NOONE
+  - N'T
+  
